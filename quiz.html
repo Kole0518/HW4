@@ -1,0 +1,56 @@
+<!--
+Kole Davis
+CPSC 332
+HW Project 4
+10/17/2022
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW4 Web App</title>
+    <link rel="stylesheet" href="quiz.css">
+    <script defer src="quiz.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+
+        <div id="settings" class="settings">
+            <h3>Options</h3>
+
+            <div>
+                <label for="shuffle">Shuffle Cards:</label>
+                <input type="checkbox" id="shuffle" name="shuffle" checked>
+            </div>
+
+            <div>
+                <label for="timed">Timed Session:</label>
+                <input type="checkbox" id="timed" name="timed">
+            </div>
+
+            <div>
+                <label for="correct">Remove Correct Cards From Deck:</label>
+                <input type="checkbox" id="correct" name="correct">
+            </div>
+
+        </div>
+
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="back-btn" class="back-btn btn hide">Back</button>
+            <button id="next-btn" class="next-btn btn hide">Next</button>
+        </div>
+    </div>
+</body>
+</html>
